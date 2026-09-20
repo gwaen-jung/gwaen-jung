@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 4800" width="1200" height="4800" role="img" aria-label="INFO: lab RESHAPE, name CINQ, 2004-30-06. ABOUT ME: automation, PCB, hardware, 3D engineer. Working in XB_STATION, RESHAPE LAB. Flight test, firmware STM32 and ESP, UAV, USV. STACK: C++, Python, Verilog. STATISTICS: total stars, repos, commits and streak.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 4320" width="1200" height="4320" role="img" aria-label="INFO: lab RESHAPE, name CINQ, 2004-30-06. ABOUT ME: automation, PCB, hardware, 3D engineer. Working in XB_STATION, RESHAPE LAB. Flight test, firmware STM32 and ESP, UAV, USV. STACK: C++, Python, Verilog. STATISTICS: total stars, repos, commits and streak.">
   <defs>
-    <clipPath id="frame"><rect width="1200" height="4800" rx="24"/></clipPath>
+    <clipPath id="frame"><rect width="1200" height="4320" rx="24"/></clipPath>
     <filter id="smooth" x="-5%" y="-5%" width="110%" height="110%">
       <feGaussianBlur stdDeviation="0.9"/>
       <feComponentTransfer><feFuncA type="linear" slope="10" intercept="-4.5"/></feComponentTransfer>
@@ -11,17 +11,33 @@
     .serif { font-family: 'Tiempos Headline', Georgia, 'Times New Roman', serif; }
     .sans  { font-family: 'Styrene A', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
     .mono  { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .float { animation: drift 11s ease-in-out infinite alternate; }
+    .float.b { animation-duration: 14s; animation-delay: -6s; }
+    @keyframes drift { from { transform: translate(0, 0) } to { transform: translate(-16px, 22px) } }
+    .float.b { animation-name: drift2; }
+    @keyframes drift2 { from { transform: translate(0, 0) } to { transform: translate(16px, -22px) } }
+    .flame { transform-box: fill-box; transform-origin: 50% 100%; animation: flicker 2.4s ease-in-out infinite; }
+    @keyframes flicker {
+      0%, 100% { transform: scale(1, 1) skewX(0deg); stroke-opacity: 1 }
+      25% { transform: scale(1.03, 1.06) skewX(-2deg); stroke-opacity: .85 }
+      50% { transform: scale(.98, 1.02) skewX(1.5deg); stroke-opacity: 1 }
+      75% { transform: scale(1.02, 1.05) skewX(-1deg); stroke-opacity: .9 }
+    }
+    .spark { opacity: 0; animation: rise 3s ease-out infinite; }
+    .spark.s2 { animation-delay: 1.4s; }
+    @keyframes rise { 0% { opacity: 0; transform: translateY(6px) } 25% { opacity: .9 } 100% { opacity: 0; transform: translateY(-16px) } }
+    @media (prefers-reduced-motion: reduce) { .float, .flame, .spark { animation: none } }
   </style>
   <g clip-path="url(#frame)">
-    <rect width="1200" height="4800" fill="#0E0E0E"/>
+    <rect width="1200" height="4320" fill="#0E0E0E"/>
     <!-- two faint logos, each 1000 wide, one third cut off by the frame -->
-    <g transform="translate(-333 -368) scale(5.525)" filter="url(#smooth)"><use href="#lg" fill="#1E1E1D"/></g>
-    <g transform="translate(533 4063) scale(5.525)" filter="url(#smooth)"><use href="#lg" fill="#1E1E1D"/></g>
+    <g class="float a"><g transform="translate(-333 -368) scale(5.525)" filter="url(#smooth)"><use href="#lg" fill="#1E1E1D"/></g></g>
+    <g class="float b"><g transform="translate(533 3583) scale(5.525)" filter="url(#smooth)"><use href="#lg" fill="#1E1E1D"/></g></g>
 
     <g stroke="#33332F" stroke-width="2">
       <line x1="100" y1="1200" x2="1100" y2="1200"/>
       <line x1="100" y1="2400" x2="1100" y2="2400"/>
-      <line x1="100" y1="3600" x2="1100" y2="3600"/>
+      <line x1="100" y1="3120" x2="1100" y2="3120"/>
     </g>
 
     <!-- INFO -->
@@ -52,16 +68,18 @@
     <text class="sans" font-size="40" x="850" y="2900" fill="#F1EFE8">VERILOG</text>
 
     <!-- STATISTICS (numbers are refreshed by .github/workflows/update-stats.yml) -->
-    <text class="serif" font-size="120" fill="#F1EFE8" x="96" y="3850">STATISTICS</text>
-    <text class="mono" font-size="26" letter-spacing="6" fill="#8B8983" x="100" y="4120">TOTAL STARS</text>
-    <text class="serif" font-size="120" fill="#F1EFE8" x="100" y="4250"><!--stars-->3<!--/stars--></text>
-    <text class="mono" font-size="26" letter-spacing="6" fill="#8B8983" x="640" y="4120">TOTAL REPOS</text>
-    <text class="serif" font-size="120" fill="#F1EFE8" x="640" y="4250"><!--repos-->4<!--/repos--></text>
-    <text class="mono" font-size="26" letter-spacing="6" fill="#8B8983" x="100" y="4470">TOTAL COMMITS</text>
-    <text class="serif" font-size="120" fill="#F1EFE8" x="100" y="4600"><!--commits-->5<!--/commits--></text>
-    <text class="mono" font-size="26" letter-spacing="6" fill="#8B8983" x="640" y="4470">STREAK</text>
-    <g transform="translate(640 4500) scale(1.25)">
-      <path fill="none" stroke="#F1EFE8" stroke-width="3.5" stroke-linejoin="round" d="M50 4C52 30 88 48 88 88C88 112 72 126 50 126C28 126 12 112 12 88C12 70 22 60 30 48C34 60 40 62 44 58C40 40 42 20 50 4Z"/>
+    <text class="serif" font-size="120" fill="#F1EFE8" x="96" y="3370">STATISTICS</text>
+    <text class="mono" font-size="26" letter-spacing="6" fill="#8B8983" x="100" y="3640">TOTAL STARS</text>
+    <text class="serif" font-size="120" fill="#F1EFE8" x="100" y="3770"><!--stars-->3<!--/stars--></text>
+    <text class="mono" font-size="26" letter-spacing="6" fill="#8B8983" x="640" y="3640">TOTAL REPOS</text>
+    <text class="serif" font-size="120" fill="#F1EFE8" x="640" y="3770"><!--repos-->4<!--/repos--></text>
+    <text class="mono" font-size="26" letter-spacing="6" fill="#8B8983" x="100" y="3990">TOTAL COMMITS</text>
+    <text class="serif" font-size="120" fill="#F1EFE8" x="100" y="4120"><!--commits-->5<!--/commits--></text>
+    <text class="mono" font-size="26" letter-spacing="6" fill="#8B8983" x="640" y="3990">STREAK</text>
+    <g transform="translate(640 4020) scale(1.25)">
+      <path class="flame" fill="none" stroke="#F1EFE8" stroke-width="3.5" stroke-linejoin="round" d="M50 4C52 30 88 48 88 88C88 112 72 126 50 126C28 126 12 112 12 88C12 70 22 60 30 48C34 60 40 62 44 58C40 40 42 20 50 4Z"/>
+      <circle class="spark s1" cx="36" cy="14" r="2.6" fill="#F1EFE8"/>
+      <circle class="spark s2" cx="64" cy="18" r="2.2" fill="#F1EFE8"/>
       <text class="serif" font-size="46" x="50" y="106" text-anchor="middle" fill="#F1EFE8"><!--streak-->2<!--/streak--></text>
     </g>
   </g>
