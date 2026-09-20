@@ -7,3 +7,5 @@
 <img src="assets/slide3.svg" alt="Stack: C++, Python, Verilog" width="100%">
 
 </div>
+
+<!-- profile readme -->
