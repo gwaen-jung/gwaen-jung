@@ -135,7 +135,7 @@
         <path class="flame" fill="none" stroke="#F1EFE8" stroke-width="3.5" stroke-linejoin="round" d="M50 4C52 30 88 48 88 88C88 112 72 126 50 126C28 126 12 112 12 88C12 70 22 60 30 48C34 60 40 62 44 58C40 40 42 20 50 4Z"/>
         <circle class="spark s1" cx="36" cy="14" r="2.6" fill="#F1EFE8"/>
         <circle class="spark s2" cx="64" cy="18" r="2.2" fill="#F1EFE8"/>
-        <text class="serif" font-size="46" x="50" y="106" text-anchor="middle" fill="#F1EFE8"><!--streak-->11<!--/streak--></text>
+        <text class="serif" font-size="46" x="50" y="106" text-anchor="middle" fill="#F1EFE8"><!--streak-->12<!--/streak--></text>
       </g>
       </g>
     </g>
