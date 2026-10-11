@@ -125,7 +125,7 @@
       <g transform="translate(0 24)">
       <text class="serif" font-size="90" fill="#F1EFE8" x="96" y="1871">STATISTICS</text>
       <text class="mono" font-size="19" letter-spacing="4.5" fill="#8B8983" x="100" y="1995">TOTAL STARS</text>
-      <text class="serif" font-size="90" fill="#F1EFE8" x="100" y="2080"><!--stars-->5<!--/stars--></text>
+      <text class="serif" font-size="90" fill="#F1EFE8" x="100" y="2080"><!--stars-->6<!--/stars--></text>
       <text class="mono" font-size="19" letter-spacing="4.5" fill="#8B8983" x="620" y="1995">TOTAL REPOS</text>
       <text class="serif" font-size="90" fill="#F1EFE8" x="620" y="2080"><!--repos-->7<!--/repos--></text>
       <text class="mono" font-size="19" letter-spacing="4.5" fill="#8B8983" x="100" y="2185">TOTAL COMMITS</text>
